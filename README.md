@@ -1,6 +1,6 @@
 # Repositorio LEMD para Kodi
 
-Skin **LEMD** (versión 1.4.2) para Fire TV, ligera y con tema Barajas, con
+Skin **LEMD** (versión 1.4.3) para Fire TV, ligera y con tema Barajas, con
 actualizaciones automáticas. Solo TV en directo (IPTV Simple), Umbrella y Meteorología.
 
 ## Instalar (una sola vez)
