@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="skin.lemd" version="1.4.0" name="LEMD" provider-name="lumo360">
+	<requires>
+		<import addon="xbmc.gui" version="5.16.0"/>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+	</extension>
+	<!-- Ayudante de widgets: solo se ejecuta al pedirlo (RunScript(skin.lemd,...)), sin servicio -->
+	<extension point="xbmc.python.script" library="scripts/lemd.py"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="es_ES">Skin ligera estilo streaming para Fire TV: TV en directo (IPTV), Umbrella y Meteorología.</summary>
+		<summary lang="en_GB">Lightweight streaming-style skin for Fire TV: live TV (IPTV), Umbrella and Weather.</summary>
+		<description lang="es_ES">Menú lateral minimalista, fondos cinematográficos y filas horizontales de carátulas configurables. Pensada solo para TV en directo (cliente IPTV), Umbrella (con Trakt) y Meteorología. Tema Barajas opcional: panel de salidas, fondo ilustrado de la T4, METAR/TAF de LEMD con pistas en uso. Sin animaciones pesadas ni servicios en segundo plano.</description>
+		<description lang="en_GB">Minimal side menu, cinematic backgrounds and configurable horizontal poster rows. Built only for live TV (IPTV client), Umbrella (with Trakt) and Weather. No heavy animations and no background services.</description>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later (código), Apache-2.0 (fuentes Roboto y Material Icons), licencia DejaVu (fuente DejaVu Sans Mono)</license>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+<addon id="resource.uisounds.lemd" version="1.0.0" name="LEMD · sonidos de cabina" provider-name="lumo360">
+  <requires>
+    <import addon="kodi.resource" version="1.0.0"/>
+  </requires>
+  <extension point="kodi.resource.uisounds"/>
+  <extension point="kodi.addon.metadata">
+    <summary lang="es_ES">Sonidos de la interfaz inspirados en la cabina de un avión (sintetizados).</summary>
+    <summary lang="en_GB">Interface sounds inspired by an aircraft cabin chime (synthesized).</summary>
+    <description lang="es_ES">«Ding» al seleccionar, «ding-dong» de cabina en los avisos y un clic suave al moverse. Actívalos en Ajustes › Interfaz › Sonidos.</description>
+    <description lang="en_GB">"Ding" on select, cabin "ding-dong" on notifications and a soft click when moving. Enable them in Settings › Interface › Sounds.</description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+<!-- Repositorio de LEMD: Kodi lo consulta solo y actualiza la skin y los sonidos
+     cuando hay una version nueva. Kodi 20 y Kodi 21+ reciben cada uno sus zips. -->
+<addon id="repository.lemd" version="1.0.0" name="Repositorio LEMD" provider-name="InfraP3Home">
+	<extension point="xbmc.addon.repository" name="Repositorio LEMD">
+		<dir minversion="20.90.0">
+			<info compressed="false">https://raw.githubusercontent.com/InfraP3Home/LEMD/main/omega/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/InfraP3Home/LEMD/main/omega/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/InfraP3Home/LEMD/main/omega/</datadir>
+		</dir>
+		<dir minversion="20.0.0" maxversion="20.89.0">
+			<info compressed="false">https://raw.githubusercontent.com/InfraP3Home/LEMD/main/nexus/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/InfraP3Home/LEMD/main/nexus/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/InfraP3Home/LEMD/main/nexus/</datadir>
+		</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="es_ES">Actualizaciones automáticas de la skin LEMD y sus sonidos de cabina.</summary>
+		<summary lang="en_GB">Automatic updates for the LEMD skin and its cabin sounds.</summary>
+		<description lang="es_ES">Instala este repositorio una vez y Kodi mantendrá la skin LEMD al día sin volver a instalar zips.</description>
+		<description lang="en_GB">Install this repository once and Kodi keeps the LEMD skin up to date without installing zips again.</description>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+</addons>
