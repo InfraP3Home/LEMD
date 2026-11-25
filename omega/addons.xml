@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.lemd" version="1.8.7" name="LEMD" provider-name="lumo360">
+<addon id="skin.lemd" version="1.8.8" name="LEMD" provider-name="lumo360">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -29,7 +29,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="resource.uisounds.lemd" version="1.0.0" name="LEMD · sonidos de cabina" provider-name="lumo360">
+<addon id="resource.uisounds.lemd" version="1.1.0" name="LEMD · sonidos de cabina" provider-name="lumo360">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
