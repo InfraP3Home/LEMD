@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.lemd" version="1.4.5" name="LEMD" provider-name="lumo360">
+<addon id="skin.lemd" version="1.5.0" name="LEMD" provider-name="lumo360">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -10,6 +10,10 @@
 	</extension>
 	<!-- Ayudante de widgets: solo se ejecuta al pedirlo (RunScript(skin.lemd,...)), sin servicio -->
 	<extension point="xbmc.python.script" library="scripts/lemd.py"/>
+	<!-- Fuente de contenido para filas de Inicio (p. ej. «Vuelos destacados»): solo se ejecuta al pintar la fila -->
+	<extension point="xbmc.python.pluginsource" library="scripts/fuente.py">
+		<provides>video</provides>
+	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="es_ES">Skin ligera estilo streaming para Fire TV: TV en directo (IPTV), Umbrella y Meteorología.</summary>
 		<summary lang="en_GB">Lightweight streaming-style skin for Fire TV: live TV (IPTV), Umbrella and Weather.</summary>
