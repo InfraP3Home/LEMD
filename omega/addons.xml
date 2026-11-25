@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.lemd" version="1.5.0" name="LEMD" provider-name="lumo360">
+<addon id="skin.lemd" version="1.6.0" name="LEMD" provider-name="lumo360">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -10,6 +10,8 @@
 	</extension>
 	<!-- Ayudante de widgets: solo se ejecuta al pedirlo (RunScript(skin.lemd,...)), sin servicio -->
 	<extension point="xbmc.python.script" library="scripts/lemd.py"/>
+	<!-- Proveedor del tiempo (Open-Meteo, sin clave): Kodi lo ejecuta al actualizar el tiempo -->
+	<extension point="xbmc.python.weather" library="scripts/tiempo.py"/>
 	<!-- Fuente de contenido para filas de Inicio (p. ej. «Vuelos destacados»): solo se ejecuta al pintar la fila -->
 	<extension point="xbmc.python.pluginsource" library="scripts/fuente.py">
 		<provides>video</provides>
