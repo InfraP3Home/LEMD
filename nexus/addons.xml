@@ -29,7 +29,7 @@
 		</assets>
 	</extension>
 </addon>
-<addon id="resource.uisounds.lemd" version="1.1.3" name="LEMD · sonidos de cabina" provider-name="JMaza">
+<addon id="resource.uisounds.lemd" version="1.1.4" name="LEMD · sonidos de cabina" provider-name="JMaza">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
@@ -37,8 +37,8 @@
   <extension point="kodi.addon.metadata">
     <summary lang="es_ES">Sonidos de la interfaz inspirados en la cabina de un avión (sintetizados).</summary>
     <summary lang="en_GB">Interface sounds inspired by an aircraft cabin chime (synthesized).</summary>
-    <description lang="es_ES">«Ding» al seleccionar, «ding-dong» de cabina en los avisos y un clic suave al moverse. Actívalos en Ajustes › Interfaz › Sonidos.</description>
-    <description lang="en_GB">"Ding" on select, cabin "ding-dong" on notifications and a soft click when moving. Enable them in Settings › Interface › Sounds.</description>
+    <description lang="es_ES">En silencio: sin sonido al moverse, al elegir, al volver ni en los avisos (el «pim-pum» de bienvenida lo pone la skin LEMD). Actívalo en Ajustes › Interfaz › Sonidos.</description>
+    <description lang="en_GB">Silent: no sound when moving, selecting, going back or on notifications (the LEMD skin plays the welcome chime).</description>
     <platform>all</platform>
     <license>GPL-2.0-or-later</license>
     <assets>
